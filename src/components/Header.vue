@@ -176,7 +176,7 @@ header {
     }
     .link {
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.6rem;
       a {
         color: white;
         -webkit-transition: color 0.2s ease-out;
