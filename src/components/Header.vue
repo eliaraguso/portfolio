@@ -76,7 +76,7 @@ export default {
 
 
 .container-sm {
-  border: 5px solid red;
+  // border: 5px solid red;
 }
 
 // Header
