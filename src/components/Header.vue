@@ -11,6 +11,7 @@
           />
           <h2>.web_developer()</h2>
         </div>
+
         <!-- Header right -->
         <div class="col-7 header-right">
           <nav class="header-nav">
@@ -57,6 +58,12 @@
               <li>
                 <router-link to="/about" class="nav-link">.about()</router-link>
               </li>
+              <li class="link">
+                <a href=""><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li class="link">
+                <a href=""><i class="fab fa-github"></i></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -73,7 +80,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
-
 
 .container-sm {
   // border: 5px solid red;
@@ -152,12 +158,13 @@ header {
   // border: 5px solid white;
   .btn-menu {
     background-color: $purple;
-    border-radius: 5px!important;
+    border-radius: 5px !important;
     // width: 100px;
     height: 60px;
     font-size: 1.4rem;
   }
   .dropdown-menu {
+    list-style: none;
     background-color: $background;
     font-size: 25px;
     border: 1px solid white;
@@ -165,6 +172,20 @@ header {
       color: white;
       &:hover {
         color: $purple;
+      }
+    }
+    .link {
+      text-align: center;
+      font-size: 3rem;
+      a {
+        color: white;
+        -webkit-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        -o-transition: color 0.2s ease-out;
+        transition: color 0.2s ease-out;
+        &:hover {
+          color: $purple;
+        }
       }
     }
   }
@@ -186,7 +207,7 @@ header {
   }
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .header-left {
     display: flex;
     flex-direction: column;
