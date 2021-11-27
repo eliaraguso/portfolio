@@ -36,36 +36,8 @@
             </ul>
           </nav>
 
-          <!-- Dropdown menu -->
-          <div class="btn-group dropstart">
-            <button
-              type="button"
-              class="btn btn-secondary btn-menu"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              .menu()
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <router-link to="/" class="nav-link">.home()</router-link>
-              </li>
-              <li>
-                <router-link to="/projects" class="nav-link"
-                  >.projects()</router-link
-                >
-              </li>
-              <li>
-                <router-link to="/about" class="nav-link">.about()</router-link>
-              </li>
-              <li class="link">
-                <a href=""><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="link">
-                <a href=""><i class="fab fa-github"></i></a>
-              </li>
-            </ul>
-          </div>
+          <!-- Navigation sidebar -->
+          <Navbar/>
         </div>
       </div>
     </div>
@@ -73,8 +45,14 @@
 </template>
 
 <script>
+import Navbar from './MobileNavbar.vue';
+
+
 export default {
   name: "Header",
+  components: {
+    Navbar,
+  },
 };
 </script>
 
@@ -153,60 +131,8 @@ header {
   }
 }
 
-// DropDown Menu
-.dropstart {
-  // border: 5px solid white;
-  .btn-menu {
-    background-color: $purple;
-    border-radius: 5px !important;
-    // width: 100px;
-    height: 60px;
-    font-size: 1.4rem;
-  }
-  .dropdown-menu {
-    list-style: none;
-    background-color: $background;
-    font-size: 25px;
-    border: 1px solid white;
-    .nav-link {
-      color: white;
-      &:hover {
-        color: $purple;
-      }
-    }
-    .link {
-      text-align: center;
-      font-size: 2.6rem;
-      a {
-        color: white;
-        -webkit-transition: color 0.2s ease-out;
-        -moz-transition: color 0.2s ease-out;
-        -o-transition: color 0.2s ease-out;
-        transition: color 0.2s ease-out;
-        &:hover {
-          color: $purple;
-        }
-      }
-    }
-  }
-}
 
 // Mediaqueries
-@media screen and (max-width: 1200px) {
-  .header-nav {
-    display: none;
-  }
-  .dropstart {
-    display: initial;
-  }
-}
-
-@media screen and (min-width: 1201px) {
-  .dropstart {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 576px) {
   .header-left {
     display: flex;
@@ -214,6 +140,12 @@ header {
     h2 {
       font-size: 14px;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-nav {
+    display: none;
   }
 }
 </style>
