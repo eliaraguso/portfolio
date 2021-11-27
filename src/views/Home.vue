@@ -105,7 +105,7 @@ main {
 
 // Title section
 .hero {
-  border: 5px solid white;
+  // border: 5px solid white;
 }
 .tag {
   // border: 5px solid orange;
@@ -119,7 +119,7 @@ main {
 h1 {
   font-size: 40px;
   width: 50%;
-  border: 5px solid blue;
+  // border: 5px solid blue;
   margin: 0 auto;
   text-align: left;
   padding-left: 40px;
