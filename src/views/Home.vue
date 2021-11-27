@@ -119,7 +119,7 @@ main {
 h1 {
   font-size: 40px;
   width: 50%;
-  // border: 5px solid blue;
+  border: 5px solid blue;
   margin: 0 auto;
   text-align: left;
   padding-left: 40px;
@@ -283,25 +283,6 @@ h1 {
 }
 
 // MEDIAQUERIES
-// @media screen and (max-width: 576px) {
-//   .hero {
-//     h1 {
-//       font-size: 18px
-//     }
-//     h2{
-//       font-size: 20px;
-//     }
-//     span{
-//       &:hover{
-//         font-size: 36px;
-//       }
-//     }
-//   }
-  
-//   .logo-box{
-//     max-width: 250px;
-//   }
-// }
 
 @media screen and (max-width: 576px) {
   .hero {
@@ -319,7 +300,7 @@ h1 {
   }
   
   .logo-box{
-    width: 200px;
+    width: 340px;
   }
 }
 
@@ -333,33 +314,33 @@ h1 {
     }
     span{
       &:hover{
-        font-size: 40px;
+        font-size: 36px;
       }
     }
   }
   
   .logo-box{
-    width: 380px;
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 990px) {
   .hero {
     h1 {
-      font-size: 26px
+      font-size: 40px
     }
     h2{
       font-size: 26px;
     }
     span{
       &:hover{
-        font-size: 40px;
+        font-size: 50px;
       }
     }
   }
   
   .logo-box{
-    max-width: 380px;
+    width: 480px;
   }
 }
 </style>
