@@ -165,4 +165,12 @@ header {
   }
 }
 
+@media screen and (min-width: 992px){
+  .header-left {
+    .logo-img {
+      margin-left: 50px;
+    }
+  }
+}
+
 </style>

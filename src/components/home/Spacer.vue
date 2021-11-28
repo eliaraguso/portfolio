@@ -32,9 +32,15 @@ export default {
  }
     
 } 
+
+@media screen and (min-width: 992px) {
+  .spacer {
+    height: 280px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .spacer {
-    height: 400px;
+    height: 300px;
   }
     
 }

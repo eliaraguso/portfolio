@@ -138,20 +138,34 @@ export default {
 // MEDIAQUERIES
 @media screen and (min-width: 576px) {
   .logo-section {
-    height: 400px;
+    height: 300px;
   }
 
   .logo-img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
   .back-cont {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
 }
 
 @media screen and (min-width: 992px) {
+  // .logo-section {
+  //   height: 500px;
+  // }
+  // .logo-img {
+  //   width: 500px;
+  //   height: 500px;
+  // }
+  // .back-cont {
+  //   width: 500px;
+  //   height: 500px;
+  // }
+}
+
+@media screen and (min-width: 1200px) {
   .logo-section {
     height: 500px;
   }
@@ -163,8 +177,5 @@ export default {
     width: 500px;
     height: 500px;
   }
-}
-
-@media screen and (min-width: 1200px) {
 }
 </style>

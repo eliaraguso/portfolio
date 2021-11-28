@@ -151,4 +151,11 @@ export default {
     display: none;
   }
 }
+
+
+@media screen and (min-width: 992px){
+  .btn-menu{
+      margin-right: 30px;
+    }
+  }
 </style>
