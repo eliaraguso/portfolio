@@ -11,6 +11,8 @@
         </div>
         <div class="flip-card-back">
           <div class="back-cont">
+            <p class="cit">“L'uomo rimane il più straordinario dei computer.”</p>
+            <p class="cit1">JOHN FITZGERALD KENNEDY</p>
 
           </div>
         </div>
@@ -65,12 +67,17 @@ export default {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1.2s;
+  transition: transform 1.2s ease-in;
   transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  transition: transform 1.2s ease-in;
+   -webkit-transition: transform 1.2s ease-in;
+  -moz-transition: transform 1.2s ease-in;
+  -o-transition: transform 1.2s ease-in;
+
 }
 
 .flip-card-front,
@@ -84,6 +91,10 @@ export default {
 
 .flip-card-back {
   transform: rotateY(180deg);
+  transition: transform 1.2s ease-in;
+  -webkit-transition: transform 1.2s ease-in;
+  -moz-transition: transform 1.2s ease-in;
+  -o-transition: transform 1.2s ease-in;
 }
 
 .back-cont {
@@ -106,7 +117,24 @@ export default {
   height: 230px;
   width: 230px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .cit {
+    // border: 5px solid white;
+    width: 60%;
+    margin-top: 20px;
+    
+  }
+  .cit1 {
+    width: 30%;
+    // border: 5px solid blue;
+    font-size: 14px;
+  }
 }
+
+
 // MEDIAQUERIES
 @media screen and (min-width: 576px) {
   .logo-section {
