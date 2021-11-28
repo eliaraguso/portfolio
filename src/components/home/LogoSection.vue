@@ -21,29 +21,14 @@ export default {
 
 // Logo section
 .logo-box {
-  width: 80%;
+  width: 55%;
   max-width: 500px;
- 
   // border: 5px solid greenyellow;
-  // border-radius: 10%;
   margin: 0 auto;
   .logo-img {
     width: 100%;
     overflow: hidden;
     border-radius: 50%;
   }
-}
-
-@media screen and (min-width: 320px) {
-    
-} 
-@media screen and (min-width: 576px) {
-    
-} 
-@media screen and (min-width: 992px) {
-    
-} 
-@media screen and (min-width: 1200px) {
-    
 }
 </style>
