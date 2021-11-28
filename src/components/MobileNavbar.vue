@@ -15,10 +15,10 @@
           <router-link to="/about" class="nav-link">.about()</router-link>
         </li>
         <li class="link">
-          <a href=""><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/eliaraguso/"><i class="fab fa-linkedin"></i></a>
         </li>
         <li class="link">
-          <a href=""><i class="fab fa-github"></i></a>
+          <a href="https://github.com/eliaraguso"><i class="fab fa-github"></i></a>
         </li>
       </ul>
     </div>
