@@ -140,6 +140,10 @@ header {
     h2 {
       font-size: 14px;
     }
+    h2,
+    .logo-img {
+      margin-left: 70px;
+    }
   }
 }
 
@@ -147,5 +151,18 @@ header {
   .header-nav {
     display: none;
   }
+  .header-left img {
+    margin-left: 40px;
+  }
 }
+
+@media screen and (min-width: 576px) {
+  .header-left {
+    h2,
+    .logo-img {
+      margin-left: 0px;
+    }
+  }
+}
+
 </style>

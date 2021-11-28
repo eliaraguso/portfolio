@@ -67,16 +67,16 @@ export default {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1.2s ease-in;
+  transition: transform 1.2s ease-in-out;
   transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-  transition: transform 1.2s ease-in;
-   -webkit-transition: transform 1.2s ease-in;
-  -moz-transition: transform 1.2s ease-in;
-  -o-transition: transform 1.2s ease-in;
+  transition: transform 1.2s ease-in-out;
+   -webkit-transition: transform 1.2s ease-in-out;
+  -moz-transition: transform 1.2s ease-in-out;
+  -o-transition: transform 1.2s ease-in-out;
 
 }
 
@@ -91,10 +91,10 @@ export default {
 
 .flip-card-back {
   transform: rotateY(180deg);
-  transition: transform 1.2s ease-in;
-  -webkit-transition: transform 1.2s ease-in;
-  -moz-transition: transform 1.2s ease-in;
-  -o-transition: transform 1.2s ease-in;
+  transition: transform 1.2s ease-in-out;
+  -webkit-transition: transform 1.2s ease-in-out;
+  -moz-transition: transform 1.2s ease-in-out;
+  -o-transition: transform 1.2s ease-in-out;
 }
 
 .back-cont {
@@ -121,7 +121,9 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .cit {
+}
+
+.cit {
     // border: 5px solid white;
     width: 60%;
     margin-top: 20px;
@@ -132,8 +134,6 @@ export default {
     // border: 5px solid blue;
     font-size: 14px;
   }
-}
-
 
 // MEDIAQUERIES
 @media screen and (min-width: 576px) {

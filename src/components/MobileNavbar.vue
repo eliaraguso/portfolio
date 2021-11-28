@@ -4,7 +4,7 @@
       <a href="javascript:void(0)" class="closebtn" v-on:click="close"
         >&times;</a
       >
-      <ul>
+      <ul class="navlink-list">
         <li>
           <router-link to="/" class="nav-link">.home()</router-link>
         </li>
@@ -22,7 +22,6 @@
         </li>
       </ul>
     </div>
-    <!-- <span class="menu-" style="font-size:30px;cursor:pointer" v-on:click="open">; open</span> -->
     <button class="btn-menu" v-on:click="open">.menu()</button>
   </div>
 </template>
@@ -32,7 +31,7 @@ export default {
   name: "Navbar",
   methods: {
     open: function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav").style.width = "100%";
     },
     close: function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
@@ -43,14 +42,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
+@import "../assets/style/common.scss";
+
 
 .btn-menu {
   background-color: $purple;
   border-radius: 5px;
-  // width: 100px;
-  height: 60px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: white;
+  padding: 7px 5px;
+  margin-right: 10px;
   -webkit-transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
   -o-transition: color 0.2s ease-out;
@@ -61,6 +62,7 @@ export default {
 }
 
 .sidenav {
+    opacity: 92%;
   height: 100%;
   width: 0;
   position: fixed;
@@ -75,8 +77,9 @@ export default {
   transition: width 0.5s ease-out;
   padding-top: 60px;
   li {
-    padding: 8px 8px 8px 32px;
-    font-size: 25px;
+    padding: 8px 8px 8px 8px;
+    font-size: 22px;
+    padding: 30px 0;
     color: $background;
     display: block;
     -webkit-transition: color 0.2s ease-out;
@@ -112,6 +115,19 @@ export default {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.navlink-list {
+  // border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  
+  li {
+    // border: 1px solid;
+    text-align: center;
+  }
 }
 
 /* // Mediaquery sulla sidenav */

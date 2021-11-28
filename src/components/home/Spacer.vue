@@ -14,7 +14,7 @@ export default {
 
     .spacer {
     width: 100%;
-    height: 180px;
+    height: 90px;
     // border: 5px solid green;
 }
 
@@ -28,7 +28,7 @@ export default {
 } 
 @media screen and (min-width: 768px) {
  .spacer {
-   height: 300px;
+   height: 160px;
  }
     
 } 

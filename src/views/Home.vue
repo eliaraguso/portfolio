@@ -10,23 +10,9 @@
       
       <LogoSection />
 
-      <Spacer />
+      <SpacerSmall />
 
-      <!-- Philosophy section -->
-      <section class="philosophy">
-        <p class="citazione">
-          - Per comprendere tutto, è necessario dimenticare tutto. - Siddharta
-          Gautama
-        </p>
-        <SpacerSmall />
-
-        <p class="spiegazione">
-          Da bambini impariamo di continuo. La nostra mappa mentale non è ancora
-          disegnata, cosa che ci rende aperti a “tutto” e ci rende in grado di
-          capire qualsiasi cosa. Non sappiamo giudicare.
-        </p>
-        <SpacerSmall />
-      </section>
+     
     </div>
   </main>
 </template>
