@@ -66,6 +66,18 @@ export default {
 }
 // MEDIAQUERIES
 
+@media screen and (min-width: 320px) {
+  .title {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  .tag {
+    margin-left: 10%;
+    font-size: 26px;
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   .hero-section {
