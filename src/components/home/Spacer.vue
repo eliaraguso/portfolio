@@ -14,20 +14,28 @@ export default {
 
     .spacer {
     width: 100%;
-    height: 300px;
-    /* border: 5px solid white; */
+    height: 180px;
+    // border: 5px solid white;
 }
 
 @media screen and (min-width: 320px) {
+ 
     
 } 
 @media screen and (min-width: 576px) {
+
     
 } 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
+ .spacer {
+   height: 300px;
+ }
     
 } 
 @media screen and (min-width: 1200px) {
+  .spacer {
+    height: 400px;
+  }
     
 }
 </style>
