@@ -10,7 +10,9 @@
           />
         </div>
         <div class="flip-card-back">
-          <div class="back-cont">ciao</div>
+          <div class="back-cont">
+
+          </div>
         </div>
       </div>
     </div>
@@ -63,7 +65,7 @@ export default {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 1.2s;
   transform-style: preserve-3d;
 }
 
@@ -108,7 +110,6 @@ export default {
 // MEDIAQUERIES
 @media screen and (min-width: 576px) {
   .logo-section {
-    border: 5px solid red;
     height: 400px;
   }
 
@@ -124,7 +125,6 @@ export default {
 
 @media screen and (min-width: 992px) {
   .logo-section {
-    border: 5px solid red;
     height: 500px;
   }
   .logo-img {
