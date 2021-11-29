@@ -36,6 +36,7 @@ export default {
 }
 
 .logo-img {
+  max-width: 100%;
   width: 230px;
   height: 230px;
   border: double 5px transparent;
