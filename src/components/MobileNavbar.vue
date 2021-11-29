@@ -62,7 +62,7 @@ export default {
 }
 
 .sidenav {
-    opacity: 92%;
+    // opacity: 92%;
   height: 100%;
   width: 0;
   position: fixed;
