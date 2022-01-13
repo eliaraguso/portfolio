@@ -36,12 +36,12 @@ export default {
     LogoSection,
   },
 
-  mounted() {
-    const card = document.querySelector(".card__inner");
-    card.addEventListener("click", function () {
-      card.classList.toggle("is-flipped");
-    });
-  },
+  // mounted() {
+  //   const card = document.querySelector(".card__inner");
+  //   card.addEventListener("click", function () {
+  //     card.classList.toggle("is-flipped");
+  //   });
+  // },
 };
 </script>
 

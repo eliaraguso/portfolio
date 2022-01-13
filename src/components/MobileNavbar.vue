@@ -1,23 +1,21 @@
 <template>
-  <div class="nav-cont">
+  <div class="nav-cont" id="nav">
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" v-on:click="close"
-        >&times;</a
-      >
+      <a href="javascript:void(0)" class="closebtn" v-on:click="close">&times;</a>
       <ul class="navlink-list">
-        <li>
+        <li v-on:click="close">
           <router-link to="/" class="nav-link">.home()</router-link>
         </li>
-        <li>
+        <li v-on:click="close">
           <router-link to="/projects" class="nav-link">.projects()</router-link>
         </li>
-        <li>
+        <li v-on:click="close">
           <router-link to="/about" class="nav-link">.about()</router-link>
         </li>
-        <li class="link">
+        <li class="link" v-on:click="close">
           <a href="https://www.linkedin.com/in/eliaraguso/"><i class="fab fa-linkedin"></i></a>
         </li>
-        <li class="link">
+        <li class="link" v-on:click="close">
           <a href="https://github.com/eliaraguso"><i class="fab fa-github"></i></a>
         </li>
       </ul>
