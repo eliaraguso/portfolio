@@ -16,15 +16,15 @@
         <div class="col-7 header-right">
           <nav class="header-nav">
             <ul>
-              <li>
+              <li class="magic-hover magic-hover__square">
                 <router-link to="/" class="nav-link">.home()</router-link>
               </li>
-              <li>
+              <li class="magic-hover magic-hover__square">
                 <router-link to="/projects" class="nav-link"
                   >.projects()</router-link
                 >
               </li>
-              <li>
+              <li class="magic-hover magic-hover__square">
                 <router-link to="/about" class="nav-link">.about()</router-link>
               </li>
               <li>
