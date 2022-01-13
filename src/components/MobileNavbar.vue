@@ -1,21 +1,21 @@
 <template>
   <div class="nav-cont" id="nav">
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" v-on:click="close">&times;</a>
+      <a href="javascript:void(0)" class="closebtn magic-hover magic-hover__square" v-on:click="close">&times;</a>
       <ul class="navlink-list">
-        <li v-on:click="close">
+        <li class="magic-hover magic-hover__square" v-on:click="close">
           <router-link to="/" class="nav-link">.home()</router-link>
         </li>
-        <li v-on:click="close">
+        <li v-on:click="close" class="magic-hover magic-hover__square">
           <router-link to="/projects" class="nav-link">.projects()</router-link>
         </li>
-        <li v-on:click="close">
+        <li v-on:click="close" class="magic-hover magic-hover__square">
           <router-link to="/about" class="nav-link">.about()</router-link>
         </li>
-        <li class="link" v-on:click="close">
+        <li class="link magic-hover magic-hover__square" v-on:click="close" >
           <a href="https://www.linkedin.com/in/eliaraguso/"><i class="fab fa-linkedin"></i></a>
         </li>
-        <li class="link" v-on:click="close">
+        <li class="link magic-hover magic-hover__square" v-on:click="close" >
           <a href="https://github.com/eliaraguso"><i class="fab fa-github"></i></a>
         </li>
       </ul>
@@ -74,16 +74,22 @@ export default {
   -o-transition: width 0.5s ease-out;
   transition: width 0.5s ease-out;
   padding-top: 60px;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   li {
-    padding: 8px 8px 8px 8px;
     font-size: 22px;
-    padding: 30px 0;
+    padding: 20px 10px;
     color: $background;
     display: block;
     -webkit-transition: color 0.2s ease-out;
     -moz-transition: color 0.2s ease-out;
     -o-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
+    // border: 5px solid red;
+    width: min-content;
     &:hover {
       color: #f1f1f1;
     }
@@ -97,6 +103,7 @@ export default {
     -moz-transition: color 0.2s ease-out;
     -o-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
+    padding: 5px 20px;
     &:hover {
       color: $background;
     }

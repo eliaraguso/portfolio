@@ -27,10 +27,10 @@
               <li class="magic-hover magic-hover__square">
                 <router-link to="/about" class="nav-link">.about()</router-link>
               </li>
-              <li>
+              <li class="magic-hover magic-hover__square nav-link">
                 <a href=""><i class="fab fa-linkedin"></i></a>
               </li>
-              <li>
+              <li class="magic-hover magic-hover__square nav-link">
                 <a href=""><i class="fab fa-github"></i></a>
               </li>
             </ul>
