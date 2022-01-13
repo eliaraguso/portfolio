@@ -11,8 +11,7 @@
       <LogoSection />
 
       <SpacerSmall />
-      <SpacerSmall />
-      <SpacerSmall />
+   
 
 
 
@@ -56,6 +55,7 @@ export default {
 main {
   background-color: $background;
   color: white;
+  min-height: calc(100vh - 6rem);
 }
 
 

@@ -11,8 +11,8 @@
         </div>
         <div class="flip-card-back">
           <div class="back-cont">
-            <p class="cit">“L'uomo rimane il più straordinario dei computer.”</p>
-            <p class="cit1">JOHN FITZGERALD KENNEDY</p>
+            <p class="cit">“Ho imparato a non preoccuparmi del risultato e di concentrarmi su ogni singolo step, cercando di farlo il più perfettamente che potessi.”</p>
+            <p class="cit1">STEVE WOZNIAK</p>
 
           </div>
         </div>
