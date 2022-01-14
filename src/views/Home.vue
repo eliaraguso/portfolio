@@ -55,7 +55,7 @@ export default {
 main {
   background-color: $background;
   color: white;
-  min-height: calc(100vh - 6rem);
+  min-height: 100vh;
 }
 
 

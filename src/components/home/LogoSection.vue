@@ -115,8 +115,8 @@ export default {
       ); /*both gradients*/
   background-origin: border-box;
   background-clip: content-box, border-box;
-  height: 230px;
-  width: 230px;
+  height: 250px;
+  width: 250px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -127,7 +127,9 @@ export default {
 .cit {
     // border: 5px solid white;
     width: 60%;
-    margin-top: 20px;
+    margin-top: 28px;
+    // border: 3px solid black;
+    font-size: 12px;
     
   }
   .cit1 {
@@ -153,17 +155,21 @@ export default {
 }
 
 @media screen and (min-width: 992px) {
-  // .logo-section {
-  //   height: 500px;
-  // }
-  // .logo-img {
-  //   width: 500px;
-  //   height: 500px;
-  // }
-  // .back-cont {
-  //   width: 500px;
-  //   height: 500px;
-  // }
+  .logo-section {
+    height: 400px;
+  }
+  .logo-img {
+    width: 400px;
+    height: 400px;
+  }
+  .back-cont {
+    width: 400px;
+    height: 400px;
+  }
+
+  .cit {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -177,6 +183,9 @@ export default {
   .back-cont {
     width: 500px;
     height: 500px;
+  }
+  .cit {
+    font-size: 23px;
   }
 }
 </style>
