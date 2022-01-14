@@ -3,7 +3,7 @@
     <div class="container-sm">
       <div class="row">
         <!-- Header left -->
-        <div class="col-5 header-left">
+        <div class="col-4 header-left">
           <img
             class="logo-img"
             src="../assets/img/Logo mio portfolio.png"
@@ -13,7 +13,7 @@
         </div>
 
         <!-- Header right -->
-        <div class="col-7 header-right">
+        <div class="col-8 header-right">
           <nav class="header-nav">
             <ul>
               <li class="magic-hover magic-hover__square">
