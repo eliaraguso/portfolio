@@ -109,8 +109,9 @@ export default {
     }
   }
   .link {
-      text-align: center;
+      // text-align: center;
       font-size: 2.6rem;
+      display: flex;
   }
 }
 
