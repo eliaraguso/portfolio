@@ -35,12 +35,12 @@ export default {
 
 @media screen and (min-width: 992px) {
   .spacer {
-    height: 280px;
+    height: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
   .spacer {
-    height: 300px;
+    height: 240px;
   }
     
 }

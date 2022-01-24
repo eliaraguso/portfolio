@@ -14,6 +14,8 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
+// MagiMouse library options
+
 options = {
 	"cursorOuter": "circle-basic",
 	"hoverEffect": "circle-move",
