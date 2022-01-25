@@ -8,7 +8,7 @@
     <div class="projects timeline">
       <ul>
         <li>
-          <div class="link-container">
+          <div class="link-container" id="deliveboo">
             <a class="project-link" href="https://deliveboo-elia.herokuapp.com/"
               >Delivery <br />
               E-Commerce <br />Site</a
@@ -16,7 +16,7 @@
           </div>
         </li>
         <li>
-          <div class="link-container">
+          <div class="link-container" id="playstation">
             <a
               class="project-link"
               href="https://htmlcssplaystation.netlify.app/"
@@ -26,7 +26,7 @@
           </div>
         </li>
         <li>
-          <div class="link-container">
+          <div class="link-container" id="meteo">
             <a class="project-link" href="https://meteoappelia.netlify.app/"
               >Web <br />
               Application <br />
@@ -35,14 +35,14 @@
           </div>
         </li>
         <li>
-          <div class="link-container">
+          <div class="link-container" id="whatsapp">
             <a class="project-link" href="https://vuewhatsapp.netlify.app/"
               >Whatsapp <br />Clone <br />Application</a
             >
           </div>
         </li>
         <li>
-          <div class="link-container">
+          <div class="link-container" id="dropbox">
             <a class="project-link" href="https://htmlcssdropbox.netlify.app/"
               >Dropbox <br />Web <br />Site</a
             >
@@ -50,21 +50,21 @@
         </li>
 
         <li>
-          <div class="link-container">
+          <div class="link-container" id="dccomics">
             <a class="project-link" href="https://vuedccomics.netlify.app/"
               >DC Comics <br />Web <br />Site</a
             >
           </div>
         </li>
         <li>
-          <div class="link-container">
+          <div class="link-container" id="boolflix">
             <a class="project-link" href="https://vueboolflix.netlify.app/"
               >Netflix <br />Clone <br />Application</a
             >
           </div>
         </li>
         <li>
-          <div class="link-container">
+          <div class="link-container" id="health">
             <a class="project-link" href="https://vuehealthcare.netlify.app/"
               >Healtcare <br />Web <br />Site</a
             >
@@ -139,19 +139,55 @@ main {
     text-align: center;
   }
 }
-
+// ---------------------------CONTAINER PROGETTI---------------------------
 .link-container {
   // background-color: greenyellow;
   display: flex;
   justify-content: center;
+background-size: 147%;
+// background-position: center;
+background-repeat: no-repeat;
   .project-link {
-    border: 1px solid red;
+    // border: 1px solid red;
     // display: block;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
   }
+}
+
+#deliveboo{
+    background-image: url("../assets/img/Deliveboo.png");
+
+}
+#meteo{
+    background-image: url("../assets/img/meteo-app.png");
+
+}
+#playstation{
+    background-image: url("../assets/img/PlayStation.png");
+
+}
+#whatsapp{
+    background-image: url("../assets/img/Boolzapp.png");
+
+}
+#dropbox{
+    background-image: url("../assets/img/Dropbox.png");
+
+}
+#dccomics{
+    background-image: url("../assets/img/vue-dc-comics.png");
+
+}
+#boolflix{
+    background-image: url("../assets/img/boolflix.png");
+
+}
+#health{
+    background-image: url("../assets/img/health.png");
+
 }
 
 /* TIMELINE
