@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import Spacer from "../components/home/Spacer.vue";
-import SpacerSmall from "../components/home/SpacerSmall.vue";
+import Spacer from "../components/Spacer.vue";
+import SpacerSmall from "../components/SpacerSmall.vue";
 import HeroSection from "../components/home/HeroSection.vue";
 import LogoSection from "../components/home/LogoSection.vue";
 

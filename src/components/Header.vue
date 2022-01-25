@@ -113,7 +113,7 @@ header {
         a {
           text-decoration: none;
           color: white;
-          font-size: 1.4rem;
+          font-size: 1rem;
           i {
             font-size: 1.6rem;
             color: $purple;
