@@ -59,9 +59,6 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
 
-.container-sm {
-  // border: 5px solid red;
-}
 
 // Header
 header {

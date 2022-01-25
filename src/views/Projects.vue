@@ -6,95 +6,119 @@
       <SpacerSmall />
     </div>
     <div class="projects timeline">
-        <ul>
-          <li>
-            <div class="link-container">
-              <a class="project-link" href="https://deliveboo-elia.herokuapp.com/">Delivery <br> E-Commerce <br>Site</a>
-            </div>
-          </li>
-          <li>
-            <div class="link-container">
-              <a class="project-link" href="https://htmlcssplaystation.netlify.app/">Playstation <br> Web <br>Site</a>
-            </div>
-          </li>
-          <li>
-            <div class="link-container">
-              <a class="project-link" href="https://meteoappelia.netlify.app/">Web <br> Application <br> Meteo</a>
-            </div>
-          </li>
-          <li>
-            <div class="link-container">
-              <a class="project-link" href="https://vuewhatsapp.netlify.app/">Whatsapp <br>Clone <br>Application</a>
-            </div>
-          </li>
-          <li>
-            <div class="link-container">
-              <a class="project-link" href="https://htmlcssdropbox.netlify.app/">Dropbox <br>Web <br>Site</a>
-            </div>
-          </li>
+      <ul>
+        <li>
+          <div class="link-container">
+            <a class="project-link" href="https://deliveboo-elia.herokuapp.com/"
+              >Delivery <br />
+              E-Commerce <br />Site</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="link-container">
+            <a
+              class="project-link"
+              href="https://htmlcssplaystation.netlify.app/"
+              >Playstation <br />
+              Web <br />Site</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="link-container">
+            <a class="project-link" href="https://meteoappelia.netlify.app/"
+              >Web <br />
+              Application <br />
+              Meteo</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="link-container">
+            <a class="project-link" href="https://vuewhatsapp.netlify.app/"
+              >Whatsapp <br />Clone <br />Application</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="link-container">
+            <a class="project-link" href="https://htmlcssdropbox.netlify.app/"
+              >Dropbox <br />Web <br />Site</a
+            >
+          </div>
+        </li>
 
-          <li>
-            <div class="link-container">
-              <a class="project-link" href="https://vuedccomics.netlify.app/">DC Comics <br>Web <br>Site</a>
-            </div>
-          </li>
-          <li>
-            <div class="link-container">
-              <a class="project-link" href="https://vueboolflix.netlify.app/">Netflix <br>Clone <br>Application</a>
-            </div>
-          </li>
-          <li>
-            <div class="link-container">
-              <a class="project-link" href="https://vuehealthcare.netlify.app/">Healtcare <br>Web <br>Site</a>
-            </div>
-          </li>
-        
-        </ul>
-      </div>
+        <li>
+          <div class="link-container">
+            <a class="project-link" href="https://vuedccomics.netlify.app/"
+              >DC Comics <br />Web <br />Site</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="link-container">
+            <a class="project-link" href="https://vueboolflix.netlify.app/"
+              >Netflix <br />Clone <br />Application</a
+            >
+          </div>
+        </li>
+        <li>
+          <div class="link-container">
+            <a class="project-link" href="https://vuehealthcare.netlify.app/"
+              >Healtcare <br />Web <br />Site</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  <Spacer/>
   </main>
 </template>
 
 <script>
 // import Spacer from "../components/Spacer.vue"
 import SpacerSmall from "../components/SpacerSmall.vue";
+import Spacer from "../components/Spacer.vue";
 
 export default {
   components: {
-    // Spacer,
+    Spacer,
     SpacerSmall,
   },
   mounted() {
     (function () {
-  "use strict";
+      "use strict";
 
-  // define variables
-  var items = document.querySelectorAll(".timeline li");
+      // define variables
+      var items = document.querySelectorAll(".timeline li");
 
-  // check if an element is in viewport
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function callbackFunc() {
-    for (var i = 0; i < items.length; i++) {
-      if (isElementInViewport(items[i])) {
-        items[i].classList.add("in-view");
+      // check if an element is in viewport
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
       }
-    }
-  }
 
-  // listen for events
-  window.addEventListener("load", callbackFunc);
-  window.addEventListener("resize", callbackFunc);
-  window.addEventListener("scroll", callbackFunc);
-})();
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
+
+      // listen for events
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("resize", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+    })();
   },
 };
 </script>
@@ -116,13 +140,17 @@ main {
   }
 }
 
-.link-container{
-  background-color: greenyellow;
+.link-container {
+  // background-color: greenyellow;
+  display: flex;
+  justify-content: center;
   .project-link {
     border: 1px solid red;
-    display: block;
+    // display: block;
     text-align: center;
     text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -159,17 +187,20 @@ main {
 
 .timeline ul li div {
   position: relative;
-  bottom: 0;
-  width: 400px;
+  bottom: -84px;
+  width: 200px;
+  height: 200px;
   padding: 15px;
   // background: #f45b69;
   border: 3px solid $purple;
+  border-radius: 50%;
 }
 
 .timeline ul li div::before {
   content: "";
   position: absolute;
-  bottom: 7px;
+  bottom: 88px;
+  left: 196px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -186,7 +217,7 @@ main {
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+  left: -238px;
 }
 
 .timeline ul li:nth-child(even) div::before {
@@ -201,7 +232,6 @@ time {
   font-weight: bold;
   margin-bottom: 8px;
 }
-
 
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -234,14 +264,15 @@ time {
   opacity: 1;
 }
 
-
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
+  // CORREZIONE DALL'ORIGINALE PER MIGLIORARE RESPONSIVE
+
+  // .timeline ul li div {
+  //   width: 250px;
+  // }
   .timeline ul li:nth-child(even) div {
     left: -289px;
     /*250+45-6*/
@@ -252,9 +283,12 @@ time {
   .timeline ul li {
     margin-left: 20px;
   }
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
+
+  // CORREZIONE DALL'ORIGINALE PER MIGLIORARE RESPONSIVE
+
+  // .timeline ul li div {
+  //    width: calc(100vw - 91px);
+  // }
   .timeline ul li:nth-child(even) div {
     left: 45px;
   }
@@ -264,7 +298,6 @@ time {
     border-color: transparent $purple transparent transparent;
   }
 }
-
 
 /* EXTRA/CLIP PATH STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
