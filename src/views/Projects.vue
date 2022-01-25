@@ -7,7 +7,11 @@
     </div>
     <div class="projects timeline">
         <ul>
-          
+          <li>
+            <div class="link-container">
+              <a class="project-link" href="https://deliveboo-elia.herokuapp.com/">Delivery <br> E-Commerce <br>Site</a>
+            </div>
+          </li>
           <li>
             <div class="link-container">
               <a class="project-link" href="https://htmlcssplaystation.netlify.app/">Playstation <br> Web <br>Site</a>
@@ -23,83 +27,28 @@
               <a class="project-link" href="https://vuewhatsapp.netlify.app/">Whatsapp <br>Clone <br>Application</a>
             </div>
           </li>
-          <!-- <li>
-            <div>
-              <time>1937</time> Proin quam velit, efficitur vel neque vitae,
-              rhoncus commodo mi. Suspendisse finibus mauris et bibendum
-              molestie. Aenean ex augue, varius et pulvinar in, pretium non
-              nisi.
+          <li>
+            <div class="link-container">
+              <a class="project-link" href="https://htmlcssdropbox.netlify.app/">Dropbox <br>Web <br>Site</a>
+            </div>
+          </li>
+
+          <li>
+            <div class="link-container">
+              <a class="project-link" href="https://vuedccomics.netlify.app/">DC Comics <br>Web <br>Site</a>
             </div>
           </li>
           <li>
-            <div>
-              <time>1940</time> Proin iaculis, nibh eget efficitur varius,
-              libero tellus porta dolor, at pulvinar tortor ex eget ligula.
-              Integer eu dapibus arcu, sit amet sollicitudin eros.
+            <div class="link-container">
+              <a class="project-link" href="https://vueboolflix.netlify.app/">Netflix <br>Clone <br>Application</a>
             </div>
           </li>
           <li>
-            <div>
-              <time>1943</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
+            <div class="link-container">
+              <a class="project-link" href="https://vuehealthcare.netlify.app/">Healtcare <br>Web <br>Site</a>
             </div>
           </li>
-          <li>
-            <div>
-              <time>1946</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1956</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1957</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut
-              mauris felis, volutpat eget porta faucibus, euismod quis ante.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1977</time> Vestibulum porttitor lorem sed pharetra
-              dignissim. Nulla maximus, dui a tristique iaculis, quam dolor
-              convallis enim, non dignissim ligula ipsum a turpis.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1985</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>2000</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>2005</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li> -->
+        
         </ul>
       </div>
   </main>
@@ -183,6 +132,7 @@ main {
 .timeline ul {
   background: $background;
   padding: 50px 0;
+  margin-bottom: 0;
 }
 
 .timeline ul li {
