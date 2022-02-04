@@ -9,10 +9,11 @@
       <ul>
         <li>
           <div class="link-container" id="deliveboo">
-            <a class="project-link" href="https://deliveboo-elia.herokuapp.com/"
-              >Delivery <br />
-              E-Commerce <br />Site</a
+            <a
+              class="project-link"
+              href="https://deliveboo-elia.herokuapp.com/"
             >
+            </a>
           </div>
         </li>
         <li>
@@ -20,59 +21,51 @@
             <a
               class="project-link"
               href="https://htmlcssplaystation.netlify.app/"
-              >Playstation <br />
-              Web <br />Site</a
             >
+            </a>
           </div>
         </li>
         <li>
           <div class="link-container" id="meteo">
-            <a class="project-link" href="https://meteoappelia.netlify.app/"
-              >Web <br />
-              Application <br />
-              Meteo</a
-            >
+            <a class="project-link" href="https://meteoappelia.netlify.app/">
+            </a>
           </div>
         </li>
         <li>
           <div class="link-container" id="whatsapp">
-            <a class="project-link" href="https://vuewhatsapp.netlify.app/"
-              >Whatsapp <br />Clone <br />Application</a
-            >
+            <a class="project-link" href="https://vuewhatsapp.netlify.app/"></a>
           </div>
         </li>
         <li>
           <div class="link-container" id="dropbox">
-            <a class="project-link" href="https://htmlcssdropbox.netlify.app/"
-              >Dropbox <br />Web <br />Site</a
-            >
+            <a
+              class="project-link"
+              href="https://htmlcssdropbox.netlify.app/"
+            ></a>
           </div>
         </li>
 
         <li>
           <div class="link-container" id="dccomics">
-            <a class="project-link" href="https://vuedccomics.netlify.app/"
-              >DC Comics <br />Web <br />Site</a
-            >
+            <a class="project-link" href="https://vuedccomics.netlify.app/"></a>
           </div>
         </li>
         <li>
           <div class="link-container" id="boolflix">
-            <a class="project-link" href="https://vueboolflix.netlify.app/"
-              >Netflix <br />Clone <br />Application</a
-            >
+            <a class="project-link" href="https://vueboolflix.netlify.app/"></a>
           </div>
         </li>
         <li>
           <div class="link-container" id="health">
-            <a class="project-link" href="https://vuehealthcare.netlify.app/"
-              >Healtcare <br />Web <br />Site</a
-            >
+            <a
+              class="project-link"
+              href="https://vuehealthcare.netlify.app/"
+            ></a>
           </div>
         </li>
       </ul>
     </div>
-  <Spacer/>
+    <Spacer />
   </main>
 </template>
 
@@ -144,50 +137,111 @@ main {
   // background-color: greenyellow;
   display: flex;
   justify-content: center;
-background-size: 147%;
-// background-position: center;
-background-repeat: no-repeat;
+  background-size: 147%;
+  // background-position: center;
+  background-repeat: no-repeat;
   .project-link {
-    // border: 1px solid red;
-    // display: block;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+}
+
+#deliveboo {
+  background-image: url("../assets/img/Deliveboo.png");
+  &::after {
+    content: "Deliveboo";
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: -40px;
   }
 }
-
-#deliveboo{
-    background-image: url("../assets/img/Deliveboo.png");
-
+#meteo {
+  background-image: url("../assets/img/meteo-app.png");
+  &::after {
+    content: "Web App Meteo";
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: -40px;
+    width: 120%;
+    text-align: center;
+  }
 }
-#meteo{
-    background-image: url("../assets/img/meteo-app.png");
-
+#playstation {
+  background-image: url("../assets/img/PlayStation.png");
+  &::after {
+    content: "Playstation";
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: -40px;
+  }
 }
-#playstation{
-    background-image: url("../assets/img/PlayStation.png");
-
+#whatsapp {
+  background-image: url("../assets/img/Boolzapp.png");
+  &::after {
+    content: "Whatsapp Clone";
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: -40px;
+    width: 120%;
+    text-align: center;
+  }
 }
-#whatsapp{
-    background-image: url("../assets/img/Boolzapp.png");
-
+#dropbox {
+  background-image: url("../assets/img/Dropbox.png");
+  &::after {
+    content: "Dropbox";
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: -40px;
+  }
 }
-#dropbox{
-    background-image: url("../assets/img/Dropbox.png");
-
+#dccomics {
+  background-image: url("../assets/img/vue-dc-comics.png");
+  &::after {
+    content: "Dc Comics";
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: -40px;
+  }
 }
-#dccomics{
-    background-image: url("../assets/img/vue-dc-comics.png");
-
+#boolflix {
+  background-image: url("../assets/img/boolflix.png");
+  &::after {
+    content: "Netflix Clone";
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: -40px;
+    width: 120%;
+    text-align: center;
+  }
 }
-#boolflix{
-    background-image: url("../assets/img/boolflix.png");
-
-}
-#health{
-    background-image: url("../assets/img/health.png");
-
+#health {
+  background-image: url("../assets/img/health.png");
+  &::after {
+    content: "Health Centre";
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: -40px;
+    width: 120%;
+    text-align: center;
+  }
 }
 
 /* TIMELINE
@@ -218,7 +272,7 @@ background-repeat: no-repeat;
   height: 30px;
   border-radius: 50%;
   background: inherit;
-  z-index: 1;
+  // z-index: 1;
 }
 
 .timeline ul li div {
