@@ -75,6 +75,7 @@ import SpacerSmall from "../components/SpacerSmall.vue";
 import Spacer from "../components/Spacer.vue";
 
 export default {
+  name:"Projects",
   components: {
     Spacer,
     SpacerSmall,

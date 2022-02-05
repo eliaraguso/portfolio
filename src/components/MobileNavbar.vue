@@ -10,7 +10,7 @@
           <router-link to="/projects" class="nav-link">.projects()</router-link>
         </li>
         <li v-on:click="close" class="magic-hover magic-hover__square">
-          <router-link to="/about" class="nav-link">.about()</router-link>
+          <router-link to="/contacts" class="nav-link">.contacts()</router-link>
         </li>
         <li class="link magic-hover magic-hover__square" v-on:click="close" >
           <a href="https://www.linkedin.com/in/eliaraguso/"><i class="fab fa-linkedin"></i></a>

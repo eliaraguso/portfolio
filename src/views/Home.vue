@@ -28,6 +28,7 @@ import LogoSection from "../components/home/LogoSection.vue";
 
 
 export default {
+  name:"Home",
   components: {
     Spacer,
     SpacerSmall,

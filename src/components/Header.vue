@@ -25,7 +25,7 @@
                 >
               </li>
               <li class="magic-hover magic-hover__square">
-                <router-link to="/about" class="nav-link">.about()</router-link>
+                <router-link to="/contacts" class="nav-link">.contacts()</router-link>
               </li>
               <li class="magic-hover magic-hover__square nav-link">
                 <a href=""><i class="fab fa-linkedin"></i></a>
@@ -66,6 +66,7 @@ header {
   background-color: $background;
   display: flex;
   align-items: center;
+  padding:65px;
 }
 
 // Header-left
@@ -110,7 +111,7 @@ header {
         a {
           text-decoration: none;
           color: white;
-          font-size: 1rem;
+          font-size: 1.3rem;
           i {
             font-size: 1.6rem;
             color: $purple;
@@ -131,6 +132,9 @@ header {
 
 // Mediaqueries
 @media screen and (max-width: 576px) {
+  header {
+    padding:0;
+  }
   .header-left {
     display: flex;
     flex-direction: column;
