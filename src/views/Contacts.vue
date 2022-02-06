@@ -108,6 +108,7 @@ export default {
 @media screen and (max-width: 576px) {
   .content {
     min-height: calc(100vh - 96px);
+    padding: 70px 0;
   }
 }
 </style>
