@@ -4,15 +4,21 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="row mb-5">
-            <div class="col-md-4 mr-auto">
-              <h3 class="thin-heading mb-4">Verona</h3>
-              <p>via Gramsci, 26 - 37138</p>
+            <div class="col-lg-6 mr-auto map-container">
+              <h3 class="thin-heading mb-4" id="verona">Verona</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1222688.5741148791!2d10.55097712209245!3d44.61947344328353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f68699be0e3%3A0x53f85a636882595b!2sVerona%20VR!5e0!3m2!1sit!2sit!4v1644189764795!5m2!1sit!2sit"
+                allowfullscreen=""
+                loading="lazy"
+                class="map"
+              ></iframe>
             </div>
-            <div class="col-md-6 ml-auto">
+            <div class="col-lg-6 ml-auto contacts-container">
               <h3 class="thin-heading mb-4">Info Contatti</h3>
-              <p>
-                T: +39 (349) 547 0 559 <br />
-                E: elia.raguso@gmail.com
+              <p class="info-container">
+                <i class="fas fa-mobile-alt email-logo"></i> +39 (349) 547 0 559
+                <br />
+                <i class="fas fa-at phone-logo"></i> elia.raguso@gmail.com
               </p>
             </div>
           </div>
@@ -68,7 +74,7 @@
                     <input
                       type="submit"
                       value="Scrivimi"
-                      class="btn btn-primary rounded-5 py-2 px-4"
+                      class="button py-2 px-4"
                     />
                   </div>
                 </div>
@@ -105,10 +111,64 @@ export default {
   color: white;
 }
 
+.email-logo,
+.phone-logo {
+  font-size: 22px;
+}
+
+.email-logo {
+  margin-bottom: 30px;
+}
+
+.thin-heading {
+  margin-bottom: 30px !important;
+  font-size: 30px;
+}
+
+.info-container {
+  font-size: 16px;
+}
+
+.map {
+  border:3px solid $purple;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+#verona {
+  text-align: center;
+  width: 200px;
+}
+
+.button {
+  background-color: $purple;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 576px) {
   .content {
     min-height: calc(100vh - 96px);
-    padding: 70px 0;
+    padding: 70px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #email {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contacts-container {
+    margin-top: 30px;
+    // border: 1px solid red;
+  }
+  .map-container {
+    margin-bottom: 30px;
+    // border: 1px solid blue;
   }
 }
 </style>
