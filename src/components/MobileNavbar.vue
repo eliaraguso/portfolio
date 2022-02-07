@@ -4,13 +4,13 @@
       <a href="javascript:void(0)" class="closebtn magic-hover magic-hover__square" v-on:click="close">&times;</a>
       <ul class="navlink-list">
         <li class="magic-hover magic-hover__square" v-on:click="close">
-          <router-link to="/" class="nav-link">.home()</router-link>
+          <router-link to="/" class="nav-link">.elia()</router-link>
         </li>
         <li v-on:click="close" class="magic-hover magic-hover__square">
-          <router-link to="/projects" class="nav-link">.projects()</router-link>
+          <router-link to="/projects" class="nav-link">.progetti()</router-link>
         </li>
         <li v-on:click="close" class="magic-hover magic-hover__square">
-          <router-link to="/contacts" class="nav-link">.contacts()</router-link>
+          <router-link to="/contacts" class="nav-link">.contatti()</router-link>
         </li>
         <li class="link magic-hover magic-hover__square" v-on:click="close" >
           <a href="https://www.linkedin.com/in/eliaraguso/"><i class="fab fa-linkedin"></i></a>

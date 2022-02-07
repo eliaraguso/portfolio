@@ -147,6 +147,10 @@ export default {
   color: white;
   border: 1px solid white;
   border-radius: 5px;
+  &:active {
+    color: $background;
+    transform: scale(1.1, 1.1);
+  }
 }
 
 .write-me {

@@ -17,15 +17,15 @@
           <nav class="header-nav">
             <ul>
               <li class="magic-hover magic-hover__square">
-                <router-link to="/" class="nav-link">.home()</router-link>
+                <router-link to="/" class="nav-link">.elia()</router-link>
               </li>
               <li class="magic-hover magic-hover__square">
                 <router-link to="/projects" class="nav-link"
-                  >.projects()</router-link
+                  >.progetti()</router-link
                 >
               </li>
               <li class="magic-hover magic-hover__square">
-                <router-link to="/contacts" class="nav-link">.contacts()</router-link>
+                <router-link to="/contacts" class="nav-link">.contatti()</router-link>
               </li>
               <li class="magic-hover magic-hover__square nav-link">
                 <a href=""><i class="fab fa-linkedin"></i></a>
