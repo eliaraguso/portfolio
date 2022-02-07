@@ -22,7 +22,7 @@
               </p>
             </div>
           </div>
-          <div class="row justify-content-center">
+          <div class="row justify-content-center write-me">
             <div class="col-md-12">
               <h3 class="thin-heading mb-4">Scrivimi</h3>
 
@@ -73,7 +73,7 @@
                   <div class="col-12">
                     <input
                       type="submit"
-                      value="Scrivimi"
+                      value="Invia"
                       class="button py-2 px-4"
                     />
                   </div>
@@ -114,6 +114,7 @@ export default {
 .email-logo,
 .phone-logo {
   font-size: 22px;
+  color: $purple;
 }
 
 .email-logo {
@@ -148,18 +149,41 @@ export default {
   border-radius: 5px;
 }
 
+.write-me {
+  padding-top: 50px ;
+}
 @media screen and (max-width: 576px) {
   .content {
     min-height: calc(100vh - 96px);
     padding: 70px 20px;
   }
+
+  .map-container,
+  .contacts-container {
+    // d-flex justify-content-center flex-wrap
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
 }
 
 @media screen and (max-width: 767px) {
   #email {
     margin-top: 20px;
   }
+
+  
 }
+
+@media screen and (max-width: 768px) {
+  #verona,
+  .info-container {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 
 @media screen and (max-width: 991px) {
   .contacts-container {
